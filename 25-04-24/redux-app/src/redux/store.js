@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
 import counterReducered from './slices/counter'
-// import counterReducer from './redux/counter/counterSlice'
-// import counterReducer from './counter/counterSlice'
+import remaindReducer from './slices/remaind'
 
 export default configureStore({
     reducer:{
-        counter: counterReducered
+        counter: counterReducered,
+        remaind: remaindReducer
     }
 })
